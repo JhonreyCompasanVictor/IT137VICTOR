@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Victor Registration Form</title>
+    <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    	<meta name="Keywords" content="Bukidnon State University, IT College ">
+      <meta name="author" content="Jhoney Compasan Victor">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>  
+<body>	
+
+   <div class="container h-100">
+         <div class="d-flex justify-content-center h-100">
+             <div class="user_card">
+                 <div class="d-flex justify-content-center">
+                     <div class="brand_icon_container">
+                         <img src="icon.png" class="brand_icon" alt="Icon">
+                        </div>
+                    </div>
+                    <center><h4>WELCOME TO</h4></center>
+                    <center><h1> MOBILE LEARNING</h1></center>
+                
+                 <div class="d-flex justify-content-center form_container">
+                <form class="form-container">
+                                  <center><h2>LOGIN</h2></center>
+                                  <label for="user">Username</label>
+               <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                       <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                   <input type="text" class="form-control" required placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+               </div>
+           <label for="user">Password</label>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">
+                     <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                  </span>
+              </div>
+                 <input type="password" id="pass" class="form-control" required placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+          </div>
+                                <div class="form-group font-weight-bold">
+                                    <input type="submit" class="btn btn-login btn-primary float-right" value="LogIn" />
+                                </div>
+                                <div class="form-group">
+                                    <a href="#" class="FPassword">
+                                        Forget Password?
+                                    </a>
+                                </div>
+                                <div class="opt1 text-center">
+                                    <p>Not register? <a href="#">Create an Acount</a></p>
+                                  </div>
+                            </form>
+                    </section>
+                </section>
+            </section>
+
+        </div>
+    </div>
+    
+    <form class="signup-form" action="" method="post">
+        <center><h2>SIGN UP</h2></center>                          
+            <label for="user">Username</label>
+               <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">
+                       <i class="fa fa-user" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                   <input type="text" class="form-control" required placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+               </div>
+           <label for="user">Password</label>
+          <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">
+                     <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                  </span>
+              </div>
+                 <input type="password" id="pass" class="form-control" required placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+          </div>
+            <label for="user">Confirm-Password</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  <i class="fa fa-unlock-alt" aria-hidden="true"></i>
+                </span>
+              </div>
+              <input type="password" id="repass" class="form-control" required placeholder="Confirm-Password" aria-label="Confirm-Password" aria-describedby="basic-addon1">
+            </div>
+            <div class="text-center">
+              <span class="term rmsg"></span>
+            </div>
+            <hr/>
+            <label for="user">Email Adress</label>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                  @
+                </span>
+              </div>
+              <input type="email" id="email" class="form-control" required placeholder="Email Adress" aria-label="Password" aria-describedby="basic-addon1">
+            </div>
+            <div class="text-center">
+              <span class="term emsg"></span>
+            </div>
+            <div class="term">
+              <label class="">
+                <input type="checkbox" required> I agree with the 
+              </label>
+              <a href="#"> Terms & Conditions </a>
+              <span>for Registration</span>
+            </div>
+            <input type="submit" id="submitSignup" class="btn btn-primary btn-block" value="SIGN UP">
+            <div class="opt1 text-center">
+              <p>Already register? <a href="#">Sign in</a></p>
+            </div>
+          </form>
+          </div>
+</div>             
+</body>
+<script type="text/javascript">
+    $('.opt1 a').click(function(){
+      $('form').animate({
+        height: "toggle", opacity: "toggle"
+      }, "slow");
+    });
+  
+    $(function() {
+      $('#email').keyup(function(){
+        if(validateEmail()){
+         $('#email').css("border","2px solid blue");
+         $('.emsg').html("<p class='text-primary'>You Entered is a valid as an email</p>");
+        }else {
+          $('#email').css("border","2px solid red");
+          $('.emsg').html("<p class='text-warning'>You Entered is invalid email!</p>");
+          return false;
+        }
+      });
+    });
+    
+    function validateEmail(){
+      var email=$("#email").val();
+      var reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+      if (reg.test(email)){
+        return true;
+      }else{
+        return false;
+      }
+    }
+    $(function() {
+      $('#repass').keyup(function(){
+        var password = $("#pass").val();
+        var repassword = $("#repass").val();
+  
+        if(password != repassword){
+          $('#repass').css("border","2px solid red");
+          $('.rmsg').html("<p class='text-warning'>The Password & Confirm-Password Does not match\!</p>");
+          return false;
+        }else 
+        $('#repass').css("border","2px solid blue");
+          $('.rmsg').html("<p class='text-primary'>The Password & Confirm-Password has successfuly has\!</p>");
+         return true;
+      });
+    });
+  </script> 
+</html>
